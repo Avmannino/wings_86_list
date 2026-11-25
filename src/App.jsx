@@ -28,6 +28,7 @@ import {
   writeBatch,
 } from 'firebase/firestore';
 
+import wingsLogo from './assets/wings-logo-badge.png';
 import { ALL_ITEMS, INVENTORY } from './data/inventory';
 import { db, firebaseConfigured } from './lib/firebase';
 
@@ -670,7 +671,13 @@ export default function App() {
       <header className="topbar">
         <div className="topbar-inner">
           <div className="brand">
-            <div className="logo-mark">W</div>
+            <img
+              className="logo-mark"
+              src={wingsLogo}
+              alt="Wings Arena"
+              width="52"
+              height="52"
+            />
 
             <div className="brand-text">
               <strong>
